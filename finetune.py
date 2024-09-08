@@ -6,122 +6,59 @@
 # distribution of this software and related documentation without an express
 # license agreement from NVIDIA CORPORATION is strictly prohibited.
 
+import argparse
+import copy
+import json
+import math
 import os
+import re
 import sys
-from typing import List
+from os.path import join
+from pathlib import Path
+from typing import List, Optional, Union
 
 import fire
+import requests
 import torch
 import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn import Sequential
-import transformers
-from datasets import load_dataset
-from typing import List, Optional, Union
 
-"""
-Unused imports:
-import bitsandbytes as bnb
-"""
+from tqdm import tqdm
 
-import requests
-import json
-import math
-
-import torch
-from pathlib import Path
-import os
-from os.path import join
-import copy
-import argparse
 from safetensors import safe_open
 from safetensors.torch import load_file, save_file
 
-from transformers import AutoConfig, AutoProcessor, AutoModelForCausalLM, AutoTokenizer, AutoModel
+from datasets import load_dataset
+
+import transformers
+from transformers import (
+    AutoConfig,
+    AutoModel,
+    AutoModelForCausalLM,
+    AutoProcessor,
+    AutoTokenizer,
+)
 
 from mixtral_modification.configuration_mixtral import MixtralAdapterConfig
-from mixtral_modification.modeling_mixtral import MixtralAdapterModel, MixtralAdapterForCausalLM
-
+from mixtral_modification.modeling_mixtral import (
+    MixtralAdapterForCausalLM,
+    MixtralAdapterModel,
+)
 
 AutoConfig.register("mixtral-adapter", MixtralAdapterConfig)
 AutoModel.register(MixtralAdapterConfig, MixtralAdapterModel)
 AutoModelForCausalLM.register(MixtralAdapterConfig, MixtralAdapterForCausalLM)
 
-def get_adapter_args(adapter_type, lora_r, lora_alpha, hidden_dim, dropout):
-    adapter_configs = {
-        'LoRA': {
-            'r': lora_r,
-            'lora_alpha': lora_alpha,
-            'lora_dropout': dropout
-        },
-        'Parallel_Adapter': {
-            'hidden_dim': hidden_dim,
-            'hidden_act': 'silu',
-            'dropout': dropout
-        }
-    }    
-    return adapter_configs.get(adapter_type, {})
 
+from utils import (
+    get_adapter_args,
+    init_trainable_parameters,
+    convert_trainable_parameters,
+    print_trainable_parameters,
+)
 
-
-
-def init_trainable_parameters(model):
-    def init_module(module, name, params):
-        for param_name, init_func in params.items():
-            if hasattr(module, param_name):
-                weight = getattr(module, param_name).weight
-                device = weight.device
-                new_weight = init_func(weight.size()).to(device)
-                weight.data = new_weight
-                weight.requires_grad = True
-                print(f"Initialized {param_name} for {name}")
-    lora_params = {
-        'lora_A': lambda size: torch.randn(size) * math.sqrt(2 / size[0]),
-        'lora_B': lambda size: torch.randn(size) * 1e-6
-    }
-    adapter_params = {
-        'adapter_w1': lambda size: torch.randn(size) * math.sqrt(2 / size[0]),
-        'adapter_w2': lambda size: torch.randn(size) * 1e-6
-    }
-    for name, module in model.named_modules():
-        if all(hasattr(module, param) for param in lora_params):
-            print(name, module)
-            init_module(module, name, lora_params)
-        if all(hasattr(module, param) for param in adapter_params):
-            print(name, module)
-            init_module(module, name, adapter_params)
-
-
-def convert_trainable_parameters(model, trainable_param_names):
-    trainable_params = 0
-    all_param = 0
-    for name, param in model.named_parameters():
-        all_param += 1
-        if any(substring in name for substring in trainable_param_names):
-            #print(name)
-            param.requires_grad = True
-            trainable_params += 1
-        else:
-            param.requires_grad = False
-    print(
-        f"Convert trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param:.2f}"
-    )
-
-
-
-
-def print_trainable_parameters(model):
-    trainable_params = 0
-    all_param = 0
-    for name, param in model.named_parameters():
-        all_param += param.numel()
-        if param.requires_grad:
-            trainable_params += param.numel()
-            #print(name)
-    print(
-        f"Print trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param:.2f}"
-    )
 
 def train(
         # model/data params
@@ -199,7 +136,6 @@ def train(
     ), "Please specify a --base_model, e.g. --base_model='mistralai/Mixtral-8x7B-Instruct-v0.1'"
     gradient_accumulation_steps = batch_size // micro_batch_size
     
-    device_map = "auto"
     world_size = int(os.environ.get("WORLD_SIZE", 1))
     ddp = world_size != 1
     if ddp:
@@ -242,7 +178,6 @@ def train(
             torch_dtype=torch.bfloat16,
             device_map='auto'#{"": int(os.environ.get("LOCAL_RANK") or 0)},
         )
-    
     
     tokenizer.pad_token_id = (
         0  # unk. we want this to be different from the eos token
@@ -405,7 +340,6 @@ def train(
     print(
         "\n If there's a warning about missing keys above, please disregard :)"
     )
-    
 
 
 def generate_prompt(data_point):
