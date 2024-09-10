@@ -30,11 +30,11 @@ run_evaluation() {
 }
 
 # Run evaluations for each dataset
-#run_evaluation boolq
-#run_evaluation piqa
-#run_evaluation social_i_qa
+run_evaluation boolq
+run_evaluation piqa
+run_evaluation social_i_qa
+run_evaluation winogrande
+run_evaluation ARC-Easy
+run_evaluation ARC-Challenge
+run_evaluation openbookqa
 run_evaluation hellaswag
-#run_evaluation winogrande
-#run_evaluation ARC-Challenge
-#run_evaluation ARC-Easy
-#run_evaluation openbookqa

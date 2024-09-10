@@ -2,7 +2,7 @@
 #SBATCH --partition=accelerated
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
-#SBATCH --time=4:59:00
+#SBATCH --time=1:59:00
 #SBATCH --job-name=Mixtral-8x7B.eval
 #SBATCH --mail-type=ALL
 
@@ -17,19 +17,6 @@
 #SBATCH --output=log/Mixtral-8x7B.${MODEL_NAME}.eval.slurm.log
 
 
-MODEL_NAME=qvlora_8
-
-run_evaluation() {
-    local dataset=$1
-    python commonsense_evaluate.qvlora.py \
-        --dataset $dataset \
-        --base_model mistralai/Mixtral-8x7B-v0.1 \
-        --peft_model checkpoints/Mixtral-8x7B-v0.1.${MODEL_NAME} \
-        --name Mixtral-8x7B.${MODEL_NAME} \
-        --batch_size 20 --max_new_tokens 4 \
-        | tee -a log/Mixtral-8x7B.${MODEL_NAME}.eval.${dataset}.log
-}
-run_evaluation hellaswag
 
 
 MODEL_NAME=qvlora_32
@@ -40,7 +27,7 @@ run_evaluation() {
         --dataset $dataset \
         --base_model mistralai/Mixtral-8x7B-v0.1 \
         --peft_model checkpoints/Mixtral-8x7B-v0.1.${MODEL_NAME} \
-        --name Mixtral-8x7B.${MODEL_NAME} \
+        --name Mixtral-8x7B.${MODEL_NAME}.new \
         --batch_size 20 --max_new_tokens 4 \
         | tee -a log/Mixtral-8x7B.${MODEL_NAME}.eval.${dataset}.log
 }

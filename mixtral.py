@@ -11,9 +11,51 @@ MODEL_NAME = "mistralai/Mixtral-8x7B-v0.1"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, 
     #cache_dir=TRANSFORMERS_CACHE_DIR, 
     token=HF_TOKEN)
-model = AutoModel.from_pretrained(MODEL_NAME, 
+model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, 
     #cache_dir=TRANSFORMERS_CACHE_DIR, 
     token=HF_TOKEN)
+
+
+
+
+
+
+
+def convert_trainable_parameters(model, trainable_param_names):
+    trainable_params = 0
+    all_param = 0
+    for name, param in model.named_parameters():
+        all_param += 1
+        if any(substring in name for substring in trainable_param_names):
+            param.requires_grad = True
+            trainable_params += 1
+        else:
+            param.requires_grad = False
+    print(
+        f"Convert trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param:.2f}"
+    )
+
+def print_trainable_parameters(model):
+    trainable_params = 0
+    all_param = 0
+    for name, param in model.named_parameters():
+        all_param += param.numel()
+        if param.requires_grad:
+            trainable_params += param.numel()
+    print(
+        f"Print trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param:.2f}"
+    )
+
+
+
+trainable_param_names = ['experts']
+convert_trainable_parameters(model, trainable_param_names)
+
+print_trainable_parameters(model)
+
+
+
+
 
 
 import os
