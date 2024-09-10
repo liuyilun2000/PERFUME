@@ -315,9 +315,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do they still make benson & hedges cigarettes?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is federal income tax the same as social security?\n\nAnswer format: true/false",
@@ -845,9 +845,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did deion sanders ever win a world series?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a german shepard the same as an alsatian?\n\nAnswer format: true/false",
@@ -865,9 +865,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does a frog jump out of boiling water?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is it possible to create mass from energy?\n\nAnswer format: true/false",
@@ -1255,9 +1255,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can one travel faster than the speed of light?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there going to be another golden compass movie?\n\nAnswer format: true/false",
@@ -1305,9 +1305,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does latent heat of vaporization change with temperature?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: can a nas be used as a server?\n\nAnswer format: true/false",
@@ -1335,9 +1335,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do powerball matches have to be in order?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is fate and the furious the last movie?\n\nAnswer format: true/false",
@@ -1475,9 +1475,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does smeagol die in lord of the rings?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: will there be a season 3 of here come the habibs?\n\nAnswer format: true/false",
@@ -1655,9 +1655,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is it 5 portions of fruit and 5 of vegetables?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: did they cancel whose line is it anyway?\n\nAnswer format: true/false",
@@ -1845,9 +1845,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: have scotland ever been in the world cup final?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a military base in san diego?\n\nAnswer format: true/false",
@@ -2195,9 +2195,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does david brooks still write for ny times?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a markup language designed to describe data?\n\nAnswer format: true/false",
@@ -2645,9 +2645,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is st augustine the oldest city in florida?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does the boy die in the book of henry?\n\nAnswer format: true/false",
@@ -2715,9 +2715,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can trucks go on the taconic state parkway?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: do you have to pay both ways on the george washington bridge?\n\nAnswer format: true/false",
@@ -3175,9 +3175,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is an ace 2 3 4 5 a straight?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is season 5 of the originals the series finale?\n\nAnswer format: true/false",
@@ -3715,9 +3715,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: was egypt a part of the ottoman empire?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: has there ever been a movie rated nc-17?\n\nAnswer format: true/false",
@@ -3895,9 +3895,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a season 4 of crazy ex girlfriend?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: will there be a series 5 of brokenwood mysteries?\n\nAnswer format: true/false",
@@ -4235,9 +4235,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are they still making new episodes of adventure time?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is 50 to 1 based on a true story?\n\nAnswer format: true/false",
@@ -4335,9 +4335,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are all xbox games compatible with xbox one?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: has the u s ever won a world cup?\n\nAnswer format: true/false",
@@ -4385,9 +4385,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did the brewers make it to the world series?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there such a thing as a fainting goat?\n\nAnswer format: true/false",
@@ -4725,9 +4725,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: was my heart will go on recorded in one take?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is women's one a day fda approved?\n\nAnswer format: true/false",
@@ -4765,9 +4765,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do ex presidents fly on air force one?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is call of duty modern warfare 2 multiplayer?\n\nAnswer format: true/false",
@@ -5555,9 +5555,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did deep blue sea 2 come out in theaters?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the water in the amazon river fresh?\n\nAnswer format: true/false",
@@ -5695,9 +5695,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a remake of my fair lady?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is chicken cordon bleu made with blue cheese?\n\nAnswer format: true/false",
@@ -5745,9 +5745,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: have we seen the bottom of the mariana trench?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is jpmorgan chase the same as chase bank?\n\nAnswer format: true/false",
@@ -5825,9 +5825,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are pork back ribs same as baby back?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the first amendment in the bill of rights?\n\nAnswer format: true/false",
@@ -5995,9 +5995,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: was arthur and george based on a true story?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: was the soviet union part of the allied powers?\n\nAnswer format: true/false",
@@ -6125,9 +6125,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a set number of supreme court justices?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a cold water bath as good as an ice bath?\n\nAnswer format: true/false",
@@ -6135,9 +6135,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is a cold water bath as good as an ice bath?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are rice noodles and glass noodles the same?\n\nAnswer format: true/false",
@@ -6195,9 +6195,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: has the un ever intervened in a conflict involving pakistan?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does it cost money to get cash back?\n\nAnswer format: true/false",
@@ -6465,9 +6465,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does every nation state have a national government?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: do evergreen trees lose their leaves in the winter?\n\nAnswer format: true/false",
@@ -7005,9 +7005,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the kentucky derby always the first weekend in may?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is st maarten and st martin the same?\n\nAnswer format: true/false",
@@ -7045,9 +7045,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: will there be a fourth season of crazy ex girlfriend?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there anything higher than a 100 dollar bill?\n\nAnswer format: true/false",
@@ -7255,9 +7255,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: has carmelo ever been to the western conference finals?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: will there be a season 4 of the flash?\n\nAnswer format: true/false",
@@ -7375,9 +7375,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is taiwan a member of the paris convention?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the movie iceman based on a true story?\n\nAnswer format: true/false",
@@ -7395,9 +7395,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a time limit for ratification of an amendment?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there always a way to win solitaire?\n\nAnswer format: true/false",
@@ -7415,9 +7415,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is boom gaspar a member of pearl jam?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is orphan x going to be a movie?\n\nAnswer format: true/false",
@@ -7505,9 +7505,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does germany have to qualify for 2018 world cup?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a mercy rule in professional soccer?\n\nAnswer format: true/false",
@@ -7605,9 +7605,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are any of the original members of lynyrd skynyrd alive?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is adjusted gross income same as taxable income?\n\nAnswer format: true/false",
@@ -8055,9 +8055,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the calvin cycle and dark reaction the same?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: will a straight talk phone work with tracfone?\n\nAnswer format: true/false",
@@ -8205,9 +8205,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are age spots the same as liver spots?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a waterfall in marble falls tx?\n\nAnswer format: true/false",
@@ -8325,9 +8325,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: were any bodies found from the edmund fitzgerald?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: has the world cup been won on penalties?\n\nAnswer format: true/false",
@@ -8495,9 +8495,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are there any ww1 veterans still alive 2018?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is attending a first aid course part of the chain of survival?\n\nAnswer format: true/false",
@@ -8505,9 +8505,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is attending a first aid course part of the chain of survival?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can you play phase 10 with 7 players?\n\nAnswer format: true/false",
@@ -8525,9 +8525,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can a girl scout be an eagle scout?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: are elephants at the top of the food chain?\n\nAnswer format: true/false",
@@ -8895,9 +8895,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: has any movie gotten 100 on rotten tomatoes?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is breakfast at tiffany's black and white?\n\nAnswer format: true/false",
@@ -9375,9 +9375,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is house of the rising sun about vietnam?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does ip man win in ip man 3?\n\nAnswer format: true/false",
@@ -10465,9 +10465,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: has nigeria reached quater final in world cup?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: will there be more bee and puppycat episodes?\n\nAnswer format: true/false",
@@ -11025,9 +11025,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is vauxhall station in zone 1 or 2?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is state bank of india and bank of india same?\n\nAnswer format: true/false",
@@ -11215,9 +11215,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the cat part of the chinese zodiac?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is footlocker and champs owned by the same company?\n\nAnswer format: true/false",
@@ -11755,9 +11755,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the heart apart of the muscular system?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does company of heroes 2 have a campaign?\n\nAnswer format: true/false",
@@ -12005,9 +12005,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is house of cards based on the british series?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can the chief justice of the supreme court be impeached?\n\nAnswer format: true/false",
@@ -12045,9 +12045,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can you take out the king in chess?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: did articles of confederation have an executive branch?\n\nAnswer format: true/false",
@@ -12065,9 +12065,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is bye bye baby owned by bed bath and beyond?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are there any sam's clubs in canada?\n\nAnswer format: true/false",
@@ -12295,9 +12295,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is a double eagle the same as an albatross?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a sacrifice fly count as an at bat?\n\nAnswer format: true/false",
@@ -12305,9 +12305,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is a sacrifice fly count as an at bat?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can you get a ticket for j walking?\n\nAnswer format: true/false",
@@ -13115,9 +13115,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do foreign dignitaries stay at the white house?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is relative risk and risk ratio the same?\n\nAnswer format: true/false",
@@ -13125,9 +13125,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is relative risk and risk ratio the same?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a statute of limitations in england?\n\nAnswer format: true/false",
@@ -13185,9 +13185,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is it illegal to warn drivers of a speed trap?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can you get pregnant with twins by two different fathers?\n\nAnswer format: true/false",
@@ -13285,9 +13285,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a bone in your ear lobe?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are the lofoten islands in the arctic circle?\n\nAnswer format: true/false",
@@ -13415,9 +13415,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the united states qualified for the world cup?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is pva glue and elmer's glue the same thing?\n\nAnswer format: true/false",
@@ -13655,9 +13655,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do they make a new champions league trophy every year?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is frozen ski movie based on a true story?\n\nAnswer format: true/false",
@@ -13705,9 +13705,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is rafflesia the largest flower in the world?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a kilowatt hour a unit of power?\n\nAnswer format: true/false",
@@ -13745,9 +13745,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a republican majority in the senate?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can a database contain more than one table?\n\nAnswer format: true/false",
@@ -14025,9 +14025,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does tara die in sons of anarchy season 4?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does german potato salad have eggs in it?\n\nAnswer format: true/false",
@@ -15405,9 +15405,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do you need to be on us soil to claim asylum?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: do they light up the twin towers every night?\n\nAnswer format: true/false",
@@ -15555,9 +15555,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: will there be a 7th season of new girl?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does new york state have the death penalty?\n\nAnswer format: true/false",
@@ -15585,9 +15585,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is log x the same as ln x?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the stop codon part of the coding region?\n\nAnswer format: true/false",
@@ -16105,9 +16105,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is boss baby back in business on netflix?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: will there be more episodes of spirit riding free?\n\nAnswer format: true/false",
@@ -16205,9 +16205,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does robert's rules of order allow proxy voting?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a season 5 in the 100?\n\nAnswer format: true/false",
@@ -16395,9 +16395,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does the baseball all star game determine home field advantage?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: have the seattle supersonics ever won a championship?\n\nAnswer format: true/false",
@@ -16595,9 +16595,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is end point the same as equivalence point?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does dory find her parents in finding dory?\n\nAnswer format: true/false",
@@ -16845,9 +16845,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is kinetic energy conserved in perfectly inelastic collisions?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a third season of good morning call?\n\nAnswer format: true/false",
@@ -16855,9 +16855,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a third season of good morning call?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are there warrant officers in the air force?\n\nAnswer format: true/false",
@@ -17145,9 +17145,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the great wall of china all around china?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is st george's chapel in westminster abbey?\n\nAnswer format: true/false",
@@ -17325,9 +17325,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did the captain of the uss indianapolis live?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: did bruce forsyth do the price is right?\n\nAnswer format: true/false",
@@ -17525,9 +17525,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is universal music group part of universal studios?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is blue bell ice cream still in business?\n\nAnswer format: true/false",
@@ -17915,9 +17915,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does the first amendment separate church and state?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a bagel with cream cheese a sandwich?\n\nAnswer format: true/false",
@@ -17925,9 +17925,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is a bagel with cream cheese a sandwich?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can a horse and a donkey have a baby?\n\nAnswer format: true/false",
@@ -18235,9 +18235,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is cholesterol a partial breakdown product of lipids?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the sort code the same for everyone?\n\nAnswer format: true/false",
@@ -18935,9 +18935,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are roasted red peppers and pimentos the same?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is an empty set an element of an empty set?\n\nAnswer format: true/false",
@@ -19125,9 +19125,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can puppies see when they open their eyes?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can you be jailed in canada for offensive speech?\n\nAnswer format: true/false",
@@ -19215,9 +19215,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there anything bigger than $100 bill?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does the amazon river run through the amazon rainforest?\n\nAnswer format: true/false",
@@ -19385,9 +19385,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did kristen bell sing all the voices of anna?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the movie burlesque based on a true story?\n\nAnswer format: true/false",
@@ -19455,9 +19455,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is snake eyes and storm shadow the same person?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: are there any flights where smoking is allowed?\n\nAnswer format: true/false",
@@ -19485,9 +19485,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do all bacteria have peptidoglycan in their cell walls?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the gulf of mexico considered an ocean?\n\nAnswer format: true/false",
@@ -19595,9 +19595,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is congo and democratic republic of congo the same country?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does ari gold get back with his wife?\n\nAnswer format: true/false",
@@ -21685,9 +21685,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there going to be a sequel to the death cure?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a bumble bee and a honey bee the same?\n\nAnswer format: true/false",
@@ -21865,9 +21865,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can you jump at the free throw line?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: will hawaii five o have a season 8?\n\nAnswer format: true/false",
@@ -22145,9 +22145,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are the two chromosomes in a pair identical?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does the a train go to penn station?\n\nAnswer format: true/false",
@@ -22325,9 +22325,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did england beat belgium in the world cup?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is pokemon lets go eevee a spin off?\n\nAnswer format: true/false",
@@ -22395,9 +22395,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is wont you be my neighbor a documentary?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: are the ford ka and fiat 500 the same?\n\nAnswer format: true/false",
@@ -22415,9 +22415,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did north korea make it to the world cup?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is it legal to smoke weed in ireland?\n\nAnswer format: true/false",
@@ -22435,9 +22435,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does companies act 2006 apply to all companies?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is cedar oil the same as cedarwood oil?\n\nAnswer format: true/false",
@@ -22495,9 +22495,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did poland qualify for the world cup 2018?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a master of fine arts a terminal degree?\n\nAnswer format: true/false",
@@ -23085,9 +23085,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are maleficent and the evil queen the same?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is in-n-out burger a franchise?\n\nAnswer format: true/false",
@@ -23245,9 +23245,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is test track the fastest ride in disney?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: were the twin towers taller than the empire state building?\n\nAnswer format: true/false",
@@ -23275,9 +23275,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there such a thing as corinthian leather?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the movie gone baby gone a true story?\n\nAnswer format: true/false",
@@ -23315,9 +23315,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the home insurance building still standing in chicago?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: are there dolphins in the north atlantic ocean?\n\nAnswer format: true/false",
@@ -23495,9 +23495,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the little house on the prairie fiction?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is fantastic beasts movie based on a book?\n\nAnswer format: true/false",
@@ -23545,9 +23545,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did abba write songs specifically for mamma mia?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the moose a member of the deer family?\n\nAnswer format: true/false",
@@ -23565,9 +23565,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a green lantern movie coming out?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are there other kinds of ketchup besides tomato?\n\nAnswer format: true/false",
@@ -23885,9 +23885,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a difference between dynamite and tnt?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: did the jamaican bobsled team carry the sled?\n\nAnswer format: true/false",
@@ -24365,9 +24365,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is closing date the same as settlement date?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does the vice president break tie votes in the senate?\n\nAnswer format: true/false",
@@ -24825,9 +24825,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: has the long exile of the archbishop ended?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does marion die in raiders of the lost ark?\n\nAnswer format: true/false",
@@ -24915,9 +24915,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the open door policy still used today?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the eye of a hurricane low pressure?\n\nAnswer format: true/false",
@@ -24955,9 +24955,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are there in and out burgers in ohio?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does king kong die in the original movie?\n\nAnswer format: true/false",
@@ -25105,9 +25105,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do all craftsman tools have a lifetime warranty?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: do you need a license for airsoft guns uk?\n\nAnswer format: true/false",
@@ -25235,9 +25235,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is iphone se and iphone 5 the same?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: did the queen mum buy a castle in scotland?\n\nAnswer format: true/false",
@@ -25365,9 +25365,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is social studies and social science the same?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is war room movie based on a true story?\n\nAnswer format: true/false",
@@ -25575,9 +25575,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did they ever make it off gilligan island?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: has south africa qualified for the world cup?\n\nAnswer format: true/false",
@@ -25865,9 +25865,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does the us follow the universal declaration of human rights?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a garbage patch in the pacific ocean?\n\nAnswer format: true/false",
@@ -25945,9 +25945,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is a way out a single player game?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a new season of once upon a time?\n\nAnswer format: true/false",
@@ -26545,9 +26545,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is visa delta the same as visa debit?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is right of abode the same as indefinite leave to remain?\n\nAnswer format: true/false",
@@ -26555,9 +26555,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is right of abode the same as indefinite leave to remain?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is verizon and verizon wireless the same company?\n\nAnswer format: true/false",
@@ -26605,9 +26605,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can you castle after being checked in chess?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: do you get 3 steps in the nba?\n\nAnswer format: true/false",
@@ -26955,9 +26955,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does the elder scrolls online have a monthly fee?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: do anne and gilbert get together in the books?\n\nAnswer format: true/false",
@@ -27145,9 +27145,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is each state guaranteed a minimum number of representatives?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: did george rr martin write the rains of castamere?\n\nAnswer format: true/false",
@@ -27455,9 +27455,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is raging bull based on a true story?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does the white house residence have a kitchen?\n\nAnswer format: true/false",
@@ -28075,9 +28075,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does sac fly count as an at bat?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a 45 colt the same as a 45 long colt?\n\nAnswer format: true/false",
@@ -28155,9 +28155,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does the sister die in the lovely bones?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the movie stepfather based on a true story?\n\nAnswer format: true/false",
@@ -28305,9 +28305,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the going to be another avengers infinity war?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is shea butter made from a tree nut?\n\nAnswer format: true/false",
@@ -28675,9 +28675,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there a season two of the messengers?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: do you need a permit to open carry in nc?\n\nAnswer format: true/false",
@@ -28695,9 +28695,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the derivative of a continuous function always continuous?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is a pip the same as a basis point?\n\nAnswer format: true/false",
@@ -29455,9 +29455,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: are kansas city ks and kansas city mo the same city?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is everybody's all american a true story?\n\nAnswer format: true/false",
@@ -29465,9 +29465,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is everybody's all american a true story?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: are activated charcoal and activated carbon the same?\n\nAnswer format: true/false",
@@ -29575,9 +29575,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does roman-dutch law still apply to south african law?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is there a bridge between morocco and spain?\n\nAnswer format: true/false",
@@ -29815,9 +29815,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is checkmate the only way to win at chess?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are old navy and gap owned by the same company?\n\nAnswer format: true/false",
@@ -29855,9 +29855,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do you need a license to carry in new hampshire?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: are ritz carlton and four seasons the same company?\n\nAnswer format: true/false",
@@ -30175,9 +30175,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is mickey and minnie's house still in magic kingdom?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: does each state have its own constitution australia?\n\nAnswer format: true/false",
@@ -30265,9 +30265,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can we travel to ireland with schengen visa?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: have the blue angels ever had an accident?\n\nAnswer format: true/false",
@@ -30785,9 +30785,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is salary included in cost of goods sold?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: can you buy liquor on sunday in pennsylvania?\n\nAnswer format: true/false",
@@ -30845,9 +30845,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is it illegal to flash your headlights to warn of police uk?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: is fargo tv show based on a true story?\n\nAnswer format: true/false",
@@ -31295,9 +31295,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does a conditional discharge mean a criminal record?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: was the united states in the world cup this year?\n\nAnswer format: true/false",
@@ -31415,9 +31415,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: did marv die in the first sin city?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is republic of ireland part of schengen visa?\n\nAnswer format: true/false",
@@ -31645,9 +31645,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do you have to be born in us to become president?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is red stripe light sold in the us?\n\nAnswer format: true/false",
@@ -32025,9 +32025,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do all teachers have to take the rica?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is the fundus of the gallbladder located near the cystic duct?\n\nAnswer format: true/false",
@@ -32175,9 +32175,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is there going to be a season 3 in daredevil?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: was germany in a position to block a british dream of building a railroad?\n\nAnswer format: true/false",
@@ -32225,9 +32225,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: does the batter have to move out of the way of a pitch?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: can an mlb game end in a tie?\n\nAnswer format: true/false",
@@ -32235,9 +32235,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: can an mlb game end in a tie?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": false
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: do away goals count in the league 2 playoffs?\n\nAnswer format: true/false",
@@ -32405,9 +32405,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: was romania part of the austro hungarian empire?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is true",
-        "pred": "true",
-        "flag": true
+        "output_pred": "the correct answer is false",
+        "pred": "false",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: does a ruby and a sapphire make a garnet?\n\nAnswer format: true/false",
@@ -32625,9 +32625,9 @@
         "output": "the correct answer is false",
         "answer": "false",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: is the iphone se before the iphone 6?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": true
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": false
     },
     {
         "instruction": "Please answer the following question with true or false, question: were the new england states free states in 1854?\n\nAnswer format: true/false",
@@ -32645,9 +32645,9 @@
         "output": "the correct answer is true",
         "answer": "true",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please answer the following question with true or false, question: do exoplanetary systems follow the titus bode rule?\n\nAnswer format: true/false\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is false",
-        "pred": "false",
-        "flag": false
+        "output_pred": "the correct answer is true",
+        "pred": "true",
+        "flag": true
     },
     {
         "instruction": "Please answer the following question with true or false, question: is manic depression the same as bi polar?\n\nAnswer format: true/false",

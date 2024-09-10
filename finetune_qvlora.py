@@ -53,7 +53,7 @@ AutoModelForCausalLM.register(MixtralAdapterConfig, MixtralAdapterForCausalLM)
 
 
 import peft
-from peft import LoraConfig, get_peft_model
+from peft import PeftModel, LoraConfig, get_peft_model
 
 from utils import (
     get_adapter_args,
@@ -251,9 +251,9 @@ def train(
             print_trainable_parameters(model)
         else:
             print(f"##### Checkpoint {checkpoint_name} not found #####")
-    else:
-        print("##### Initializing parameters #####")
-        init_trainable_parameters(model)
+    #else:
+    #    print("##### Initializing parameters #####")
+    #    init_trainable_parameters(model)
     
     #trainable_param_names = ['lora_A', 'lora_B', 'adapter_w1', 'adapter_w2', 'shared_routing_adapter_gate']
     #convert_trainable_parameters(model, trainable_param_names)

@@ -1465,8 +1465,8 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: What would be the flavor if you ate the item that fell and is thought to have hit Sir Issac Newton's head\n\nAnswer1: Sweet Answer2: Salty Answer3: bitter Answer4: sour\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
+        "output_pred": "the correct answer is answer4",
+        "pred": "answer4",
         "flag": false
     },
     {
@@ -1785,9 +1785,9 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Organisms covered by layers of sediment\n\nAnswer1: become fossils over night Answer2: may end up reanimated over time Answer3: develop characteristics for survival Answer4: may end up fueling a car\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": true
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: The winter solstice is on December 21st in the\n\nAnswer1: counties Answer2: north of equator Answer3: states Answer4: southern hemisphere\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -2435,9 +2435,9 @@
         "output": "the correct answer is answer2",
         "answer": "answer2",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Wax can be used similarly to\n\nAnswer1: wood Answer2: rubber Answer3: water Answer4: metal\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer2",
-        "pred": "answer2",
-        "flag": true
+        "output_pred": "the correct answer is answer1",
+        "pred": "answer1",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Bill planted rapeseed in his field one year and soybeans the next in order to\n\nAnswer1: get bigger yields Answer2: make things boring Answer3: keep things random Answer4: get smaller yields\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -3045,9 +3045,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: a compass is a kind of tool for determining direction by pointing\n\nAnswer1: to western Canada shoreline Answer2: to the lower pole Answer3: to the upper pole Answer4: directly to the equator\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which of these saws will last longer?\n\nAnswer1: iron saw Answer2: aluminium saw Answer3: plastic saw Answer4: wooden saw\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -3155,9 +3155,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: what is the closest source of plasma to our planet?\n\nAnswer1: all of these Answer2: the cloud in the sky Answer3: the nearest star sulfur burning heavenly body Answer4: the bare moon surface\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": false
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: A sailor needs to navigate to the shore, and does this by\n\nAnswer1: closing the sails quickly Answer2: setting out to sea Answer3: making an adjustment to the rudder Answer4: taking the afternoon off\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -3235,9 +3235,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: A saguaro has adaptations for an environment with\n\nAnswer1: lots of snow Answer2: many people Answer3: less water Answer4: more water\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": false
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: There are less hummingbirds by this house than before because of\n\nAnswer1: a feeder at this house Answer2: the birds no longer like feeders Answer3: the size of the feeder Answer4: a feeder at another house\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -3735,9 +3735,9 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Carbon steel is always what?\n\nAnswer1: attractive to various objects that contain iron Answer2: pleasant with a magnetic personality Answer3: made up of iron and pieces of magnets Answer4: hard as a magnetizing rod\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": true
+        "output_pred": "the correct answer is answer4",
+        "pred": "answer4",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: if a bat delivers a live offspring, what does this tell us?\n\nAnswer1: it is a mammal Answer2: calling it a bird is wrong Answer3: all of these Answer4: it is capable of reproducing\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -4025,9 +4025,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: the closest star to our planet delivers solar energy to the planet\n\nAnswer1: maybe Answer2: all of these Answer3: this is sure Answer4: this is uncertain\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Coal-fire power stations heat coal to incredible temps in order to\n\nAnswer1: produce energy Answer2: use heat energy Answer3: burn energy Answer4: fuel the world\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -4405,9 +4405,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Water can turn to vapor\n\nAnswer1: when a pot of water is placed on an off stove burner Answer2: when placing water in a freezer Answer3: when boiling eggs on a stove top Answer4: when placed in a room temperature setting\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer1",
+        "pred": "answer1",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: An incandescent bulb's filament produces similar light as an LED bulb, but more\n\nAnswer1: white light Answer2: conversion Answer3: heat Answer4: sound\n\nAnswer format: answer1/answer2/answer3/answer4",

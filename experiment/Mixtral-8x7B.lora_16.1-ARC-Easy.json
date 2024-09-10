@@ -505,9 +505,9 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which tools are needed to measure the effects of friction on a block of wood?\n\nAnswer1: meter stick, spring scale Answer2: balance, stopwatch Answer3: balance, meter stick Answer4: meter stick, stopwatch\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": true
+        "output_pred": "the correct answer is answer4",
+        "pred": "answer4",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Planets outside of our solar system have been detected. What suggested the presence of a planet outside of our solar system?\n\nAnswer1: radio wave emissions Answer2: a wobble in the rotation of the star Answer3: regular occurring eclipses of its moons Answer4: the discovery of a star as large as our own\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -1135,9 +1135,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Air is composed of many different substances. Which of the following components of air is a compound rather than an element?\n\nAnswer1: Argon, Ar Answer2: Oxygen, O2 Answer3: Water, H2O Answer4: Nitrogen, N2\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which factor is responsible for the presence of equatorial deserts?\n\nAnswer1: global warming Answer2: asteroid impacts Answer3: tilt of the Earth's axis Answer4: the solar activity cycle\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -2865,9 +2865,9 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: The life cycle of a beetle is similar to the butterfly. Which process changes the beetle from larva to adult?\n\nAnswer1: molting Answer2: migration Answer3: photosynthesis Answer4: metamorphosis\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": true
+        "output_pred": "the correct answer is answer1",
+        "pred": "answer1",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which adaptation helps a bird fly?\n\nAnswer1: larger feet Answer2: bigger eyes Answer3: longer beaks Answer4: hollow bones\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -4595,9 +4595,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which statement best describes the Law of Superposition?\n\nAnswer1: Each sedimentary layer of rock represents 1,000 years of Earth's age, much like the rings of a tree. Answer2: In undisturbed layers of sedimentary rock, the upper rock layers are older than the lower rock layers. Answer3: In undisturbed layers of sedimentary rock, the lowest layers contain the older rocks. Answer4: Rocks that form near volcanoes are older than surrounding rock.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which object is the best conductor of electricity?\n\nAnswer1: glass rod Answer2: wooden stick Answer3: plastic straw Answer4: metal nail\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -4965,9 +4965,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: A company wants to make a game that uses a magnet that sticks to a board. Which material should it use for the board?\n\nAnswer1: cardboard Answer2: glass Answer3: steel Answer4: wood\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which sequence has the states of matter listed from least to greatest kinetic energy?\n\nAnswer1: solid -> gas -> liquid Answer2: gas -> liquid -> solid Answer3: liquid -> solid -> gas Answer4: solid -> liquid -> gas\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -6605,9 +6605,9 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: In a particular habitat, Animal X has two sources of food. One source is found in the water and the other source is found on land. If the main predator of Animal X is found only on land, what is the most likely structural adaptation that will be selected for in the population of Animal X?\n\nAnswer1: development of claws Answer2: increase in leg strength Answer3: increase in visual acuity Answer4: development of webbed feet\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer2",
-        "pred": "answer2",
-        "flag": false
+        "output_pred": "the correct answer is answer4",
+        "pred": "answer4",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: A teacher uses an instrument that records decibel levels. What is the teacher measuring?\n\nAnswer1: noise levels Answer2: intensity of light Answer3: relative humidity Answer4: types of thermal energy\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -8425,9 +8425,9 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: When a fern reproduces with spores, the offspring\n\nAnswer1: will be genetically identical to the parent plant. Answer2: will be better able to adapt to the environment. Answer3: will have half the genetic materials of the parent plant. Answer4: will have twice the genetic materials of the parent plant.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer2",
-        "pred": "answer2",
-        "flag": false
+        "output_pred": "the correct answer is answer1",
+        "pred": "answer1",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: The process of water changing from its liquid state to a gas in the water cycle is known as\n\nAnswer1: precipitation. Answer2: evaporation. Answer3: condensation. Answer4: translation.\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -9635,9 +9635,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Two students went fishing one morning and caught 20 fish. The afternoon before, they caught 5 fish. Because of their morning success, they claimed that morning was the best time to fish. Which of these would most likely disprove their claim?\n\nAnswer1: catching more than 20 fish in the same location Answer2: catching more than 20 fish in another location Answer3: catching more than 20 fish the next afternoon Answer4: catching more than 20 fish the next morning\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which question can be answered by scientific experimentation and observation?\n\nAnswer1: Are dogs better pets than cats? Answer2: How many stars are in the universe? Answer3: In what type of light will a plant grow best? Answer4: How many organisms have lived on Earth?\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -10035,8 +10035,8 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which characteristic does a euglena share with an amoeba?\n\nAnswer1: They reproduce by mitosis. Answer2: They eat by phagocytosis. Answer3: They respond to light stimuli. Answer4: They move by changing shape.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
         "flag": false
     },
     {
@@ -10875,8 +10875,8 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which of the following will absorb heat energy?\n\nAnswer1: two sticks being rubbed together Answer2: a piece of wood burning Answer3: steel wool rusting Answer4: ice cubes melting\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer2",
-        "pred": "answer2",
+        "output_pred": "the correct answer is answer1",
+        "pred": "answer1",
         "flag": false
     },
     {
@@ -11595,9 +11595,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: A cold-blooded vertebrate with smooth skin belongs to what class of animals?\n\nAnswer1: reptile Answer2: fish Answer3: amphibian Answer4: mammal\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": false
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: Which of these best describes a tornado?\n\nAnswer1: A winter storm that produces frozen precipitation Answer2: A rotating funnel-shaped cloud with strong winds and thunderstorms Answer3: A severe weather condition with low temperatures and blowing snow Answer4: A storm that forms over warm ocean water and has extremely strong winds\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -11885,9 +11885,9 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which current property of our solar system is mainly due to solar emissions occurring soon after the initiation of fusion in the Sun's core?\n\nAnswer1: directions of revolution of the planets Answer2: directions of rotation of the planets Answer3: distribution of moons among the planets Answer4: distribution of elements among the planets\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": false
+        "output_pred": "the correct answer is answer4",
+        "pred": "answer4",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: Water puddles on a sidewalk evaporate when the Sun heats the water. Which of these best describes what is happening as the water evaporates?\n\nAnswer1: Water changes phase as it releases heat to the environment. Answer2: Water boils as it absorbs energy from the sidewalk. Answer3: Water becomes a gas as it absorbs energy from the Sun. Answer4: Water evaporates as its thermal energy is transferred to the air.\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -13625,9 +13625,9 @@
         "output": "the correct answer is answer2",
         "answer": "answer2",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which list includes only examples of matter that can take the shape of a container?\n\nAnswer1: oil, air, and rock Answer2: water, air, and milk Answer3: sand, ice, and wood Answer4: nail, stick, and paper\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": false
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: Which source of energy is nonrenewable?\n\nAnswer1: coal Answer2: sunlight Answer3: water Answer4: wood\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -13975,9 +13975,9 @@
         "output": "the correct answer is answer2",
         "answer": "answer2",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: The European starling entered North America in the late 1800s. It proved very successful and was able to spread throughout the United States by 1955. The survival and rapid reproduction of starlings most likely limited the population size of which organisms within its habitats?\n\nAnswer1: its decomposers Answer2: its competitors Answer3: its mutualists Answer4: its predators\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": false
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: Which does 12.0 grams represent?\n\nAnswer1: mass Answer2: volume Answer3: speed Answer4: force\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -14065,9 +14065,9 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: A neutral atom is best described as having\n\nAnswer1: more protons than neutrons. Answer2: more electrons than protons. Answer3: an equal number of protons and neutrons. Answer4: an equal number of protons and electrons.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": true
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which statement best describes a learned characteristic in a dog?\n\nAnswer1: A dog scratches at a door to go outside. Answer2: A dog has floppy ears. Answer3: A dog pants to cool itself on a hot day. Answer4: A dog has a dark coat.\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -14095,8 +14095,8 @@
         "output": "the correct answer is answer2",
         "answer": "answer2",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which of these shows the correct order needed for a solar eclipse to happen?\n\nAnswer1: Sun, Earth, Moon Answer2: Sun, Moon, Earth Answer3: Moon, Sun, Earth Answer4: Moon, Earth, Sun\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
         "flag": false
     },
     {
@@ -14325,9 +14325,9 @@
         "output": "the correct answer is answer4",
         "answer": "answer4",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Which of the following is composed of many cells?\n\nAnswer1: virus Answer2: bacterium Answer3: paramecium Answer4: plant\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer3",
-        "pred": "answer3",
-        "flag": false
+        "output_pred": "the correct answer is answer4",
+        "pred": "answer4",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: As a result of human activity, many lakes in Florida have increased levels of nutrients that support algal growth. These algae grow very rapidly, then die and decompose. What impact does this overgrowth of algae most likely have on the lake ecosystem?\n\nAnswer1: The number of fish species increases. Answer2: The volume of lake water increases. Answer3: The buildup of bottom sediments decreases. Answer4: The amount of dissolved oxygen decreases.\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -14735,9 +14735,9 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Rock layers with sand-sized particles were most likely deposited by\n\nAnswer1: wind. Answer2: water. Answer3: glaciers. Answer4: landslides.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer2",
-        "pred": "answer2",
-        "flag": false
+        "output_pred": "the correct answer is answer1",
+        "pred": "answer1",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: The living systems of plants and animals are constantly taking in water to continue the processes of life. What eventually happens to most of that water?\n\nAnswer1: It is converted into hydrogen and oxygen. Answer2: It is returned to the environment. Answer3: It is broken down by bacterial decay. Answer4: It is permanently combined with other compounds.\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -18755,9 +18755,9 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: Daphnee is going to build a model of the solar system for her science project. She decides that a meter (m) will represent one astronomical unit (AU) in her model. Based on this scale, how far away from the Sun would she need to place Earth?\n\nAnswer1: one meter Answer2: two meters Answer3: three meters Answer4: four meters\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": true
+        "output_pred": "the correct answer is answer2",
+        "pred": "answer2",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: A lizard in a desert sits on a warm rock. Where does the heat energy in the rock come from?\n\nAnswer1: the Sun Answer2: the lizard's skin Answer3: deep within Earth Answer4: the decay of plant materials\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -19045,9 +19045,9 @@
         "output": "the correct answer is answer3",
         "answer": "answer3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: During a laboratory investigation, a student cracks a clean, empty Erlenmeyer flask. It does not break, but it can no longer be used. Where should the flask be placed?\n\nAnswer1: trash can Answer2: biohazard bag Answer3: broken glass bin Answer4: hazardous waste bin\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer4",
-        "pred": "answer4",
-        "flag": false
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": true
     },
     {
         "instruction": "Please choose the correct answer to the question: A light bulb transforms electrical energy into light energy. A light bulb also transforms electrical energy into\n\nAnswer1: heat energy Answer2: potential energy Answer3: magnetic energy Answer4: mechanical energy\n\nAnswer format: answer1/answer2/answer3/answer4",
@@ -22135,9 +22135,9 @@
         "output": "the correct answer is answer1",
         "answer": "answer1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request. \n\n                ### Instruction:\n                Please choose the correct answer to the question: A model of the Moon would be different from a model of Earth in that the Moon should\n\nAnswer1: be smaller than Earth. Answer2: have a source of light inside. Answer3: have a smoother surface than Earth. Answer4: have fewer impact craters on the surface.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n                ### Response:\n                the correct answer is",
-        "output_pred": "the correct answer is answer1",
-        "pred": "answer1",
-        "flag": true
+        "output_pred": "the correct answer is answer3",
+        "pred": "answer3",
+        "flag": false
     },
     {
         "instruction": "Please choose the correct answer to the question: Which of the following correctly lists the structures in space from smallest to largest?\n\nAnswer1: star, galaxy, solar system, universe Answer2: star, solar system, galaxy, universe Answer3: star, solar system, universe, galaxy Answer4: star, universe, solar system, galaxy\n\nAnswer format: answer1/answer2/answer3/answer4",

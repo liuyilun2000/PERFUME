@@ -4,6 +4,7 @@ def analyze_model_performance(directory, dataset):
     # Create a dictionary to store the model performance data
     performance_data = {}
     # Print header
+    print("-" * 90)
     print(f"{'Filename':<60} {'Total':<10} {'Flagged':<10} {'Ratio':<10}")
     print("-" * 90)
     # Get and sort the list of JSON files in the directory

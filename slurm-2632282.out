@@ -1,0 +1,27 @@
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+python: can't open file 'commonsense_evaluate.qvlora.py': [Errno 2] No such file or directory
+
+============================= JOB FEEDBACK =============================
+
+Job ID: 2632282
+Cluster: hk
+User/Group: hgf_mxv5488/hk-project-p0022189
+Account: hk-project-p0022189
+State: COMPLETED (exit code 0)
+Partition: accelerated
+Nodes: 1
+Cores per node: 152
+Nodelist: hkn0518
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 01:05:52 core-walltime
+Job Wall-clock time: 00:00:26
+Starttime: Mon Sep  9 22:41:59 2024
+Endtime: Mon Sep  9 22:42:25 2024
+Memory Utilized: 4.20 MB
+Memory Efficiency: 0.00% of 0.00 MB

@@ -25,16 +25,16 @@ run_evaluation() {
         --base_model mistralai/Mixtral-8x7B-v0.1 \
         --peft_model checkpoints/Mixtral-8x7B-v0.1.${MODEL_NAME} \
         --name Mixtral-8x7B.${MODEL_NAME} \
-        --batch_size 32 --max_new_tokens 4 \
+        --batch_size 20 --max_new_tokens 4 \
         | tee -a log/Mixtral-8x7B.${MODEL_NAME}.eval.${dataset}.log
 }
 
 # Run evaluations for each dataset
-run_evaluation boolq
-run_evaluation piqa
-run_evaluation social_i_qa
+#run_evaluation boolq
+#run_evaluation piqa
+#run_evaluation social_i_qa
 run_evaluation hellaswag
-run_evaluation winogrande
-run_evaluation ARC-Challenge
-run_evaluation ARC-Easy
-run_evaluation openbookqa
+#run_evaluation winogrande
+#run_evaluation ARC-Challenge
+#run_evaluation ARC-Easy
+#run_evaluation openbookqa
