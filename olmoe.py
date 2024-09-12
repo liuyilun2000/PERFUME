@@ -6,7 +6,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModel
 HF_TOKEN = "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"
 MODEL_NAME = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 MODEL_NAME = "mistralai/Mixtral-8x7B-v0.1"
-
+MODEL_NAME = "allenai/OLMoE-1B-7B-0924-Instruct"
+MODEL_NAME = "allenai/OLMoE-1B-7B-0924"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, 
     #cache_dir=TRANSFORMERS_CACHE_DIR, 

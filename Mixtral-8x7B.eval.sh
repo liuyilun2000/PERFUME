@@ -25,7 +25,7 @@ run_evaluation() {
         --base_model mistralai/Mixtral-8x7B-v0.1 \
         --peft_model checkpoints/Mixtral-8x7B-v0.1.${MODEL_NAME} \
         --name Mixtral-8x7B.${MODEL_NAME} \
-        --batch_size 20 --max_new_tokens 4 \
+        --batch_size 16 --max_new_tokens 4 \
         | tee -a log/Mixtral-8x7B.${MODEL_NAME}.eval.${dataset}.log
 }
 

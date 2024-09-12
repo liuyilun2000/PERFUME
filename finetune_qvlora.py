@@ -152,13 +152,13 @@ def train(
         os.environ["WANDB_LOG_MODEL"] = wandb_log_model
 
     
-    if 'Mixtral' in base_model:
-        tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
-        model = AutoModelForCausalLM.from_pretrained(
-            base_model,
-            torch_dtype=torch.bfloat16,
-            device_map='auto'#{"": int(os.environ.get("LOCAL_RANK") or 0)},
-        )
+    #if 'Mixtral' in base_model:
+    tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(
+        base_model,
+        torch_dtype=torch.bfloat16,
+        device_map='auto'#{"": int(os.environ.get("LOCAL_RANK") or 0)},
+    )
     
     tokenizer.pad_token_id = (
         0  # unk. we want this to be different from the eos token
