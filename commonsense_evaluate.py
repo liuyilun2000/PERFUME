@@ -45,6 +45,18 @@ AutoModel.register(MixtralAdapterConfig, MixtralAdapterModel)
 AutoModelForCausalLM.register(MixtralAdapterConfig, MixtralAdapterForCausalLM)
 
 
+from olmoe_modification.configuration_olmoe import OlmoeAdapterConfig
+from olmoe_modification.modeling_olmoe import (
+    OlmoeAdapterForCausalLM,
+    OlmoeAdapterModel,
+)
+
+AutoConfig.register("olmoe-adapter", OlmoeAdapterConfig)
+AutoModel.register(OlmoeAdapterConfig, OlmoeAdapterModel)
+AutoModelForCausalLM.register(OlmoeAdapterConfig, OlmoeAdapterForCausalLM)
+
+
+
 from utils import (
     get_adapter_args,
     init_trainable_parameters,
@@ -206,7 +218,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', choices=["boolq", "piqa", "social_i_qa", "hellaswag", "winogrande", "ARC-Challenge", "ARC-Easy", "openbookqa"],
                         required=True)
-    parser.add_argument('--base_model', choices=['mistralai/Mixtral-8x7B-v0.1'], required=True)
+    parser.add_argument('--base_model', required=True)
     parser.add_argument('--peft_model', required=True)
     parser.add_argument('--name', required=True)
     parser.add_argument('--batch_size', type=int, required=True)
@@ -231,40 +243,47 @@ def load_model(args) -> tuple:
     if not peft_model:
         raise ValueError(f'can not find peft weight, the value is: {peft_model}')
     
+    
+    def set_dropout_to_zero(obj):
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                if isinstance(value, (dict, list)):
+                    set_dropout_to_zero(value)
+                elif isinstance(key, str) and 'dropout' in key.lower():
+                    obj[key] = 0.0
+        elif isinstance(obj, list):
+            for item in obj:
+                set_dropout_to_zero(item)
+        elif hasattr(obj, '__dict__'):
+            for key, value in obj.__dict__.items():
+                if isinstance(value, (dict, list)):
+                    set_dropout_to_zero(value)
+                elif isinstance(key, str) and 'dropout' in key.lower():
+                    setattr(obj, key, 0.0)    
+    config_path = os.path.join(
+        peft_model, "config.json"
+    )
+    config = AutoConfig.from_pretrained(config_path, trust_remote_code=True)
+    set_dropout_to_zero(config)
+    print(config)
+    config.output_router_logits = False
+    tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
+
     if 'Mixtral' in base_model:
-        config_path = os.path.join(
-            peft_model, "config.json"
-        )
-        config = AutoConfig.from_pretrained(config_path, trust_remote_code=True)
-
-        def set_dropout_to_zero(obj):
-            if isinstance(obj, dict):
-                for key, value in obj.items():
-                    if isinstance(value, (dict, list)):
-                        set_dropout_to_zero(value)
-                    elif isinstance(key, str) and 'dropout' in key.lower():
-                        obj[key] = 0.0
-            elif isinstance(obj, list):
-                for item in obj:
-                    set_dropout_to_zero(item)
-            elif hasattr(obj, '__dict__'):
-                for key, value in obj.__dict__.items():
-                    if isinstance(value, (dict, list)):
-                        set_dropout_to_zero(value)
-                    elif isinstance(key, str) and 'dropout' in key.lower():
-                        setattr(obj, key, 0.0)
-
-        set_dropout_to_zero(config)
-        print(config)
-
-        tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
         model = MixtralAdapterForCausalLM.from_pretrained(
             base_model,
             config=config,
             torch_dtype=torch.bfloat16,
-            device_map='auto'#{"": int(os.environ.get("LOCAL_RANK") or 0)},
+            device_map='auto'
         )
-    
+    elif 'OLMoE' in base_model:
+        model = OlmoeAdapterForCausalLM.from_pretrained(
+            base_model,
+            config=config,
+            torch_dtype=torch.bfloat16,
+            device_map='auto'
+        )
+        
     tokenizer.pad_token_id = (
         0  # unk. we want this to be different from the eos token
     )

@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-def analyze_model_performance(directory, dataset):
+def analyze_model_performance(directory, dataset, model=''):
     # Create a dictionary to store the model performance data
     performance_data = {}
     # Print header
@@ -11,7 +11,7 @@ def analyze_model_performance(directory, dataset):
     json_files = sorted([f for f in os.listdir(directory) if f.endswith('.json')])
     # Iterate through the sorted files in the directory
     for filename in json_files:
-        if filename.endswith('.json') and dataset in filename:
+        if filename.endswith('.json') and dataset in filename and model in filename:
             with open(os.path.join(directory, filename), 'r') as f:
                 data = pd.read_json(f)
             total = len(data['flag'])
@@ -22,4 +22,4 @@ def analyze_model_performance(directory, dataset):
 
 # Call the function with the directory containing the JSON files
 for dataset in ['boolq', 'piqa', 'social_i_qa', 'hellaswag', 'winogrande', 'ARC-Easy', 'ARC-Challenge', 'openbookqa']:
-    analyze_model_performance('experiment', dataset)
+    analyze_model_performance('experiment', dataset, model='OLMoE')

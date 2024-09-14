@@ -52,6 +52,17 @@ AutoModel.register(MixtralAdapterConfig, MixtralAdapterModel)
 AutoModelForCausalLM.register(MixtralAdapterConfig, MixtralAdapterForCausalLM)
 
 
+from olmoe_modification.configuration_olmoe import OlmoeAdapterConfig
+from olmoe_modification.modeling_olmoe import (
+    OlmoeAdapterForCausalLM,
+    OlmoeAdapterModel,
+)
+
+AutoConfig.register("olmoe-adapter", OlmoeAdapterConfig)
+AutoModel.register(OlmoeAdapterConfig, OlmoeAdapterModel)
+AutoModelForCausalLM.register(OlmoeAdapterConfig, OlmoeAdapterForCausalLM)
+
+
 from utils import (
     get_adapter_args,
     init_trainable_parameters,
@@ -159,7 +170,6 @@ def train(
     
     if 'Mixtral' in base_model:
         config = MixtralAdapterConfig(
-            vocab_size=32000,
             shared_adapter=shared_adapter,
             shared_adapter_num=shared_adapter_num,
             shared_routing_adapter=shared_routing_adapter,
@@ -173,6 +183,27 @@ def train(
         print(config)
         tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
         model = MixtralAdapterForCausalLM.from_pretrained(
+            base_model,
+            config=config,
+            torch_dtype=torch.bfloat16,
+            device_map='auto'#{"": int(os.environ.get("LOCAL_RANK") or 0)},
+        )
+    elif 'OLMoE' in base_model:
+        config = OlmoeAdapterConfig(
+            intermediate_size=1024,
+            shared_adapter=shared_adapter,
+            shared_adapter_num=shared_adapter_num,
+            shared_routing_adapter=shared_routing_adapter,
+            shared_routing_adapter_num_experts=shared_routing_adapter_num_experts,
+            shared_routing_adapter_num_experts_per_tok=shared_routing_adapter_num_experts_per_tok,
+            embedded_routing_adapter=embedded_routing_adapter,
+            adapter_type=adapter_type,
+            adapter_args=adapter_args,
+            output_router_logits=True
+        )
+        print(config)
+        tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
+        model = OlmoeAdapterForCausalLM.from_pretrained(
             base_model,
             config=config,
             torch_dtype=torch.bfloat16,
@@ -331,7 +362,9 @@ def train(
     ).__get__(model, type(model))
 
     if torch.__version__ >= "2" and sys.platform != "win32":
+        print(f"##### Compiling for {wandb_run_name} #####")
         model = torch.compile(model)
+        print(f"##### Compiling finished #####")
 
     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
 

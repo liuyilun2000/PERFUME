@@ -209,7 +209,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', choices=["boolq", "piqa", "social_i_qa", "hellaswag", "winogrande", "ARC-Challenge", "ARC-Easy", "openbookqa"],
                         required=True)
-    parser.add_argument('--base_model', choices=['mistralai/Mixtral-8x7B-v0.1'], required=True)
+    parser.add_argument('--base_model', required=True)
     parser.add_argument('--peft_model', required=True)
     parser.add_argument('--name', required=True)
     parser.add_argument('--batch_size', type=int, required=True)

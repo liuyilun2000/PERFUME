@@ -7,19 +7,18 @@
 #SBATCH --mail-type=ALL
 
 # Check if a model name argument is provided
-#if [ $# -eq 0 ]; then
-#    echo "Please provide a model name argument"
-#    exit 1
-#fi
+if [ $# -eq 0 ]; then
+    echo "Please provide a model name argument"
+    exit 1
+fi
 
-#MODEL_NAME=$1
+MODEL_NAME=$1
 
 #SBATCH --output=log/Mixtral-8x7B.${MODEL_NAME}.eval.slurm.log
 
 
 
 
-MODEL_NAME=qvlora_32
 
 run_evaluation() {
     local dataset=$1
@@ -36,8 +35,8 @@ run_evaluation() {
 run_evaluation boolq
 run_evaluation piqa
 run_evaluation social_i_qa
-run_evaluation hellaswag
 run_evaluation winogrande
 run_evaluation ARC-Challenge
 run_evaluation ARC-Easy
 run_evaluation openbookqa
+run_evaluation hellaswag

@@ -19,6 +19,105 @@ model = AutoModelForCausalLM.from_pretrained(MODEL_NAME,
 
 
 
+# Copyright (c) 2024, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+
+import argparse
+import copy
+import json
+import math
+import os
+import re
+import sys
+from os.path import join
+from pathlib import Path
+from typing import List, Optional, Union
+
+import fire
+import requests
+import torch
+import torch.distributed as dist
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.nn import Sequential
+
+from tqdm import tqdm
+
+from safetensors import safe_open
+from safetensors.torch import load_file, save_file
+
+from datasets import load_dataset
+
+import transformers
+from transformers import (
+    AutoConfig,
+    AutoModel,
+    AutoModelForCausalLM,
+    AutoProcessor,
+    AutoTokenizer,
+)
+
+from mixtral_modification.configuration_mixtral import MixtralAdapterConfig
+from mixtral_modification.modeling_mixtral import (
+    MixtralAdapterForCausalLM,
+    MixtralAdapterModel,
+)
+
+AutoConfig.register("mixtral-adapter", MixtralAdapterConfig)
+AutoModel.register(MixtralAdapterConfig, MixtralAdapterModel)
+AutoModelForCausalLM.register(MixtralAdapterConfig, MixtralAdapterForCausalLM)
+
+
+from olmoe_modification.configuration_olmoe import OlmoeAdapterConfig
+from olmoe_modification.modeling_olmoe import (
+    OlmoeAdapterForCausalLM,
+    OlmoeAdapterModel,
+)
+
+AutoConfig.register("olmoe-adapter", OlmoeAdapterConfig)
+AutoModel.register(OlmoeAdapterConfig, OlmoeAdapterModel)
+AutoModelForCausalLM.register(OlmoeAdapterConfig, OlmoeAdapterForCausalLM)
+
+
+from utils import (
+    get_adapter_args,
+    init_trainable_parameters,
+    convert_trainable_parameters,
+    print_trainable_parameters,
+)
+
+
+
+base_model = "allenai/OLMoE-1B-7B-0924"
+
+config = OlmoeAdapterConfig(
+    intermediate_size=1024,
+    shared_adapter=True,
+    shared_adapter_num=1,
+    adapter_type='LoRA',
+    adapter_args={
+            'r': 16,
+            'lora_alpha': 32,
+            'lora_dropout': 0.05
+    },
+    output_router_logits=True
+)
+print(config)
+tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
+model = OlmoeAdapterForCausalLM.from_pretrained(
+    base_model,
+    config=config,
+    torch_dtype=torch.bfloat16,
+    device_map='auto'#{"": int(os.environ.get("LOCAL_RANK") or 0)},
+)
+
+
+
 
 
 

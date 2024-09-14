@@ -117,7 +117,7 @@ class MixtralAdapterConfig(PretrainedConfig):
         shared_routing_adapter=False,
         shared_routing_adapter_num_experts=0,
         shared_routing_adapter_num_experts_per_tok=0,
-        shared_routing_adapter_router_aux_loss_coef=0.001,
+        shared_routing_adapter_router_aux_loss_coef=0.02,
         embedded_routing_adapter=False,
         adapter_type=None,
         adapter_args=None,
@@ -142,7 +142,7 @@ class MixtralAdapterConfig(PretrainedConfig):
         num_experts_per_tok=2,
         num_local_experts=8,
         output_router_logits=False,
-        router_aux_loss_coef=0.001,
+        router_aux_loss_coef=0.02,
         **kwargs,
     ):
         self.shared_adapter = shared_adapter
