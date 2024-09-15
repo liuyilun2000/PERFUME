@@ -167,3 +167,5 @@ wandb/
 experiment/
 *.safetensors
 *.pt
+*.out
+*.log
