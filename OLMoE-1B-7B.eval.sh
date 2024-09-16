@@ -2,7 +2,7 @@
 #SBATCH --partition=accelerated
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
-#SBATCH --time=5:59:00
+#SBATCH --time=1:59:00
 #SBATCH --mail-type=ALL
 
 
