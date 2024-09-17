@@ -20,12 +20,18 @@ declare -a configs=(
     "64 128 False True False 8 8 64.8-8"
     "64 128 False True False 16 8 64.16-8"
 )
-'''
 declare -a configs=(
     "128 256 False True False 2 2 128.2-2"
     "128 256 False True False 4 4 128.4-4"
     "128 256 False True False 8 8 128.8-8"
     "64 128 False True False 4 1 64.4-1"
+)
+'''
+declare -a configs=(
+    "256 512 False True False 2 2 256.2-2"
+    "256 512 False True False 4 4 256.4-4"
+    "256 512 False True False 8 8 128.8-8"
+    "512 1024 False True False 2 2 512.2-2"
 )
 
 # Function to run training
