@@ -6,6 +6,7 @@
 #SBATCH --mail-type=ALL
 
 
+'''
 # Check if the model type parameter is provided
 if [ $# -eq 0 ]; then
     echo "Error: Model type parameter is required."
@@ -20,7 +21,6 @@ MODEL_TYPE=$1
 #SBATCH --job-name=OLMoE-1B-7B.${MODEL_TYPE}.eval
 #SBATCH --output=log/OLMoE-1B-7B.${MODEL_TYPE}.%j.eval.slurm.log
 
-
 # Define the configurations
 declare -a configs=(
     "lora_4.${MODEL_TYPE}"
@@ -28,7 +28,13 @@ declare -a configs=(
     "lora_16.${MODEL_TYPE}"
     "lora_32.${MODEL_TYPE}"
 )
-
+'''
+declare -a configs=(
+    "lora_64.2-1"
+    "lora_64.2-2"
+    "lora_4.1"
+    "lora_2.e"
+)
 
 # Function to run evaluation
 run_evaluation() {

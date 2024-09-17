@@ -2,20 +2,31 @@
 #SBATCH --partition=accelerated
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
-#SBATCH --time=19:59:00
+#SBATCH --time=23:59:00
 #SBATCH --job-name=OLMoE-1B-7B.lora_add.train
 #SBATCH --output=log/OLMoE-1B-7B.lora_add.%j.train.slurm.log
 #SBATCH --mail-type=ALL
 
-
+'''
 declare -a configs=(
     "64 128 False True False 2 1 64.2-1"
     "64 128 False True False 2 2 64.2-2"
     "4 8 True False False 1 0 4.1"
     "2 4 False False True 0 0 2.e"
 )
-
-
+declare -a configs=(
+    "64 128 False False True 0 0 64.e"
+    "64 128 False True False 4 4 64.4-4"
+    "64 128 False True False 8 8 64.8-8"
+    "64 128 False True False 16 8 64.16-8"
+)
+'''
+declare -a configs=(
+    "128 256 False True False 2 2 128.2-2"
+    "128 256 False True False 4 4 128.4-4"
+    "128 256 False True False 8 8 128.8-8"
+    "64 128 False True False 4 1 64.4-1"
+)
 
 # Function to run training
 run_training() {

@@ -70,4 +70,4 @@ def analyze_model_performance(directory, datasets, model=''):
 datasets = ['boolq', 'piqa', 'social_i_qa', 'hellaswag', 'winogrande', 'ARC-Easy', 'ARC-Challenge', 'openbookqa']
 
 # Call the function with the directory containing the JSON files
-analyze_model_performance('experiment', datasets, model='OLMoE')
+analyze_model_performance('experiment', datasets, model='qvlora')

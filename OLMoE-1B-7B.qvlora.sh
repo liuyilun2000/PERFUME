@@ -2,24 +2,29 @@
 #SBATCH --partition=accelerated
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:3
-#SBATCH --time=19:59:00
+#SBATCH --time=23:59:00
 #SBATCH --job-name=OLMoE-1B-7B.qvlora.train
 #SBATCH --output=log/OLMoE-1B-7B.qvlora_%j.aux.train.slurm.log
 #SBATCH --mail-type=ALL
 
-
-#declare -a configs=(
-#    "4 8 OLMoE-1B-7B.qvlora_4"
-#    "8 16 OLMoE-1B-7B.qvlora_8"
-#    "16 32 OLMoE-1B-7B.qvlora_16"
-#    "32 64 OLMoE-1B-7B.qvlora_32"
-#)
-
-
+'''
+declare -a configs=(
+    "4 8 OLMoE-1B-7B.qvlora_4"
+    "8 16 OLMoE-1B-7B.qvlora_8"
+    "16 32 OLMoE-1B-7B.qvlora_16"
+    "32 64 OLMoE-1B-7B.qvlora_32"
+)
 declare -a configs=(
     "2 4 OLMoE-1B-7B.qvlora_2"
     "64 128 OLMoE-1B-7B.qvlora_64"
     "128 256 OLMoE-1B-7B.qvlora_128"
+)
+'''
+declare -a configs=(
+    "1 2 OLMoE-1B-7B.qvlora_1"
+    "256 512 OLMoE-1B-7B.qvlora_256"
+    "512 1024 OLMoE-1B-7B.qvlora_512"
+    "1024 2048 OLMoE-1B-7B.qvlora_1024"
 )
 
 # Function to run training

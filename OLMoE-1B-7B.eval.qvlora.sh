@@ -2,7 +2,7 @@
 #SBATCH --partition=accelerated
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
-#SBATCH --time=3:59:00
+#SBATCH --time=1:59:00
 #SBATCH --job-name=OLMoE-1B-7B.qvlora.eval
 #SBATCH --output=log/OLMoE-1B-7B.qvlora_%j.eval.slurm.log
 #SBATCH --mail-type=ALL
