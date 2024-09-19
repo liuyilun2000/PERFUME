@@ -8,12 +8,10 @@
 #SBATCH --mail-type=ALL
 
 
-'''
 declare -a configs=(
-    "qvlora_4.aux"
-    "qvlora_8.aux"
-    "qvlora_16.aux"
-    "qvlora_32.aux"
+    "qvlora_1.aux"
+    "qvlora_256.aux"
+    "qvlora_512.aux"
 )
 '''
 
@@ -24,6 +22,7 @@ declare -a configs=(
     "qvlora_64"
 )
 
+'''
 
 
 datasets=(
