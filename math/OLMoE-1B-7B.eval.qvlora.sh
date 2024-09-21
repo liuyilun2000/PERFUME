@@ -22,53 +22,17 @@ MODEL_TYPE=$1
 
 # Define the configurations
 declare -a configs=(
-    "lora_4.2-2"
-    "lora_8.2-2"
-    "lora_16.2-2"
-    "lora_32.2-2"
-    "lora_4.4-4"
-    "lora_8.4-4"
-    "lora_16.4-4"
-    "lora_32.4-4"
-    "lora_4.8-8"
-    "lora_8.8-8"
-    "lora_16.8-8"
-    "lora_32.8-8"
-    "lora_4.1"
-    "lora_8.1"
-    "lora_16.1"
-    "lora_32.1"
-    "lora_4.2"
-    "lora_8.2"
-    "lora_16.2"
-    "lora_32.2"
-    "lora_4.4"
-    "lora_8.4"
-    "lora_16.4"
-    "lora_32.4"
-    "lora_4.2-1"
-    "lora_8.2-1"
-    "lora_16.2-1"
-    "lora_32.2-1"
-    "lora_4.4-1"
-    "lora_8.4-1"
-    "lora_16.4-1"
-    "lora_32.4-1"
-    "lora_4.4-2"
-    "lora_8.4-2"
-    "lora_16.4-2"
-    "lora_32.4-2"
-    "lora_4.8-2"
-    "lora_8.8-2"
-    "lora_16.8-2"
-    "lora_32.8-2"
-    "lora_4.e"
-    "lora_8.e"
-    "lora_16.e"
-    "lora_32.e"
+    "qvlora_4"
+    "qvlora_8"
+    "qvlora_16"
+    "qvlora_32"
 )
 '''
 declare -a configs=(
+    "qvlora_1"
+    "qvlora_2"
+    "qvlora_64"
+    "qvlora_128"
 )
 
 # Function to run evaluation
@@ -80,7 +44,7 @@ run_evaluation() {
     export CUDA_VISIBLE_DEVICES=$gpu_id
     
     for dataset in "MultiArith" "gsm8k" "AddSub" "AQuA" "SingleEq" "SVAMP"; do
-        python math_evaluate.py \
+        python math_evaluate.qvlora.py \
             --dataset $dataset \
             --base_model allenai/OLMoE-1B-7B-0924 \
             --peft_model checkpoints/OLMoE-1B-7B-0924.${config} \

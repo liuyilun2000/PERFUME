@@ -6,12 +6,19 @@
 #SBATCH --job-name=OLMoE-1B-7B.qvlora.train
 #SBATCH --output=log/OLMoE-1B-7B.qvlora.%j.train.slurm.log
 #SBATCH --mail-type=ALL
-
+'''
 declare -a configs=(
     "4 8 4"
     "8 16 8"
     "16 32 16"
     "32 64 32"
+)
+'''
+declare -a configs=(
+    "1 2 1"
+    "2 4 2"
+    "64 128 64"
+    "128 256 128"
 )
 # Function to run training
 run_training() {
