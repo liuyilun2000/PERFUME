@@ -82,6 +82,7 @@ def generate_text(tokenizer, model, prompt, max_length=100):
 
 
 base_model = "allenai/OLMoE-1B-7B-0924"
+#config = ["lora_8.1", "lora_8.4", "lora_8.4-1", "lora_8.4-4"]
 config = "lora_16.8-2"
 math_peft_model = f"math/checkpoints/OLMoE-1B-7B-0924.{config}"
 commonsense_peft_model = f"commonsense/checkpoints/OLMoE-1B-7B-0924.{config}"
@@ -149,32 +150,39 @@ from umap import umap_ as UMAP
 import torch
 from tqdm import tqdm
 
+
 def prepare_data_for_comparison(commonsense_vectors, math_vectors, sample_ratio=1.0, random_state=42):
-    original_moe_data = []
-    adapter_data = []
+    all_data = []
     # Process original MoE data (FFN Expert and Router)
-    for i, vec in enumerate(commonsense_vectors['router_vectors']):
-        original_moe_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': 'Router'})
     for i, expert_vectors in enumerate(commonsense_vectors['ffn_expert_vectors']):
         for vec in expert_vectors:
-            original_moe_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': 'FFN Expert'})
+            all_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': 'FFN Expert'})
+    for i, vec in enumerate(commonsense_vectors['router_vectors']):
+        all_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': 'FFN Router'})
     # Process adapter data
     for model_name, vectors in [("Commonsense", commonsense_vectors), ("Math", math_vectors)]:
-        for i, vec in enumerate(vectors['shared_routing_gate_vectors']):
-            adapter_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': f'{model_name} Routing Gate'})
         for i, adapter_vectors in enumerate(vectors['shared_routing_adapter_vectors']):
             for vec in adapter_vectors:
-                adapter_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': f'{model_name} Routing Adapter'})
-    original_moe_df = pd.DataFrame(original_moe_data)
-    adapter_df = pd.DataFrame(adapter_data)
-    all_data = pd.concat([original_moe_df, adapter_df], ignore_index=True)
-    original_moe_vectors = np.stack(original_moe_df['vector'].values)
-    all_vectors = np.stack(all_data['vector'].values)
+                all_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': f'{model_name} Routing Adapter'})
+        for i, vec in enumerate(vectors['shared_routing_gate_vectors']):
+            all_data.append({'vector': vec.detach().to(torch.float32).cpu().numpy(), 'expert': i, 'type': f'{model_name} Routing Gate'})
+    # Convert to DataFrame
+    all_df = pd.DataFrame(all_data)
+    # Normalize all vectors together
+    all_vectors = np.stack(all_df['vector'].values)
     scaler = StandardScaler()
-    original_moe_vectors_normalized = scaler.fit_transform(original_moe_vectors)
-    all_vectors_normalized = scaler.transform(all_vectors)
-    print(f"Total vectors: {len(all_vectors)}, Original MoE vectors: {len(original_moe_vectors)}")
-    return all_data, all_vectors_normalized, original_moe_df, original_moe_vectors_normalized, adapter_df
+    all_vectors_normalized = scaler.fit_transform(all_vectors)
+    # Split into original MoE and adapter data
+    original_moe_mask = all_df['type'].isin(['FFN Expert'])
+    original_moe_df = all_df[original_moe_mask].copy()
+    adapter_df = all_df[~original_moe_mask].copy()
+    # Update the normalized vectors in the DataFrames
+    all_df['vector_normalized'] = list(all_vectors_normalized)
+    original_moe_df['vector_normalized'] = list(all_vectors_normalized[original_moe_mask])
+    adapter_df['vector_normalized'] = list(all_vectors_normalized[~original_moe_mask])
+    original_moe_vectors_normalized = all_vectors_normalized[original_moe_mask]
+    print(f"Total vectors: {len(all_vectors)}, Original MoE vectors: {len(original_moe_vectors_normalized)}")
+    return all_df, all_vectors_normalized, original_moe_df, original_moe_vectors_normalized, adapter_df
 
 
 def apply_pca(data, n_components=0.95):
@@ -195,24 +203,24 @@ def apply_pca(data, n_components=0.95):
 
 
 
-def visualize_model_comparison(original_moe_df, adapter_df, proj_2d, n_pca_components, n_neighbors, min_dist, save_name):
+def visualize_model_comparison(all_df, proj_2d, n_pca_components, n_neighbors, min_dist, save_name):
     plt.style.use('seaborn-v0_8-whitegrid')
     plt.rcParams['font.family'] = 'QTOptimum'
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(24, 8), sharey=True)
     type_markers = {
-        'FFN Expert': 'o', 'Router': '*',
+        'FFN Expert': 'o', 'FFN Router': '*',
         'Commonsense Routing Gate': '*', 'Commonsense Routing Adapter': 'o',
         'Math Routing Gate': '*', 'Math Routing Adapter': 'o'
     }
     point_sizes = {
-        'FFN Expert': 5, 'Router': 64,
-        'Commonsense Routing Gate': 64, 'Commonsense Routing Adapter': 10,
-        'Math Routing Gate': 64, 'Math Routing Adapter': 10
+        'FFN Expert': 5, 'FFN Router': 100,
+        'Commonsense Routing Gate': 100, 'Commonsense Routing Adapter': 10,
+        'Math Routing Gate': 100, 'Math Routing Adapter': 10
     }
     point_alpha = {
-        'FFN Expert': 0.1, 'Router': 1,
-        'Commonsense Routing Gate': 1, 'Commonsense Routing Adapter': 0.5,
-        'Math Routing Gate': 1, 'Math Routing Adapter': 0.5
+        'FFN Expert': 0.1, 'FFN Router': 1,
+        'Commonsense Routing Gate': 1, 'Commonsense Routing Adapter': 0.4,
+        'Math Routing Gate': 1, 'Math Routing Adapter': 0.4
     }
     def plot_data(ax, data, title):
         num_experts = data['expert'].nunique()
@@ -233,8 +241,8 @@ def visualize_model_comparison(original_moe_df, adapter_df, proj_2d, n_pca_compo
         ax.grid(which='major', linestyle='-', linewidth='0.5', color='gray', alpha=0.8)
         ax.set_title(title, fontsize=24, fontweight='bold')
     # Determine the overall data range based on the first subplot (original_moe_df)
-    x_min, x_max = proj_2d[original_moe_df.index, 0].min(), proj_2d[original_moe_df.index, 0].max()
-    y_min, y_max = proj_2d[original_moe_df.index, 1].min(), proj_2d[original_moe_df.index, 1].max()
+    x_min, x_max = proj_2d[all_df.index, 0].min(), proj_2d[all_df.index, 0].max()
+    y_min, y_max = proj_2d[all_df.index, 1].min(), proj_2d[all_df.index, 1].max()
     # Add some padding to the limits
     x_range = x_max - x_min
     y_range = y_max - y_min
@@ -243,17 +251,18 @@ def visualize_model_comparison(original_moe_df, adapter_df, proj_2d, n_pca_compo
     y_min -= 0.05 * y_range
     y_max += 0.05 * y_range
     # Plot data and set limits for each subplot
-    plot_data(ax1, original_moe_df, 'FFN Experts and Router')
+    ffn_df = all_df[all_df['type'].str.startswith('FFN')]
+    plot_data(ax1, ffn_df, 'FFN Experts and Router')
     ax1.set_xlim(x_min, x_max)
     ax1.set_ylim(y_min, y_max)
     ax1.set_xlabel('UMAP Dimension 1', fontsize=22, fontweight='bold')
     ax1.set_ylabel('UMAP Dimension 2', fontsize=22, fontweight='bold')
-    commonsense_adapter_df = adapter_df[adapter_df['type'].str.startswith('Commonsense')]
+    commonsense_adapter_df = all_df[all_df['type'].str.startswith('Commonsense')]
     plot_data(ax2, commonsense_adapter_df, 'Commonsense Adapters')
     ax2.set_xlim(x_min, x_max)
     ax2.set_ylim(y_min, y_max)
     ax2.set_xlabel('UMAP Dimension 1', fontsize=22, fontweight='bold')
-    math_adapter_df = adapter_df[adapter_df['type'].str.startswith('Math')]
+    math_adapter_df = all_df[all_df['type'].str.startswith('Math')]
     plot_data(ax3, math_adapter_df, 'Math Adapters')
     ax3.set_xlim(x_min, x_max)
     ax3.set_ylim(y_min, y_max)
@@ -271,21 +280,21 @@ plt.rcParams['font.family'] = 'QTOptimum'
 
 
 
-n_neighbors, min_dist, n_components = (10, 0.8, 2)
+n_neighbors, min_dist, n_components = (20, 0.5, 2)
 
-for layer_index in [2, 4, 8, 10, 15]:
+for layer_index in [8]:
     commonsense_layer = commonsense_model.model.layers[layer_index]
     math_layer = math_model.model.layers[layer_index]
     commonsense_vectors = extract_layer_vectors(commonsense_layer, layer_index)
     math_vectors = extract_layer_vectors(math_layer, layer_index)
     all_data, all_vectors_normalized, original_moe_df, original_moe_vectors_normalized, adapter_df = prepare_data_for_comparison(commonsense_vectors, math_vectors)
-    pca, n_pca_components = apply_pca(original_moe_vectors_normalized, 0.2)
+    pca, n_pca_components = apply_pca(original_moe_vectors_normalized, 0.8)
     pca_result_original = pca.transform(original_moe_vectors_normalized)
     pca_result_all = pca.transform(all_vectors_normalized)
     umap_model = UMAP.UMAP(n_neighbors=n_neighbors, min_dist=min_dist, n_components=n_components, random_state=42)
     umap_model.fit(pca_result_original)
     proj_2d = umap_model.transform(pca_result_all)
-    visualize_model_comparison(original_moe_df, adapter_df, proj_2d, n_pca_components, n_neighbors, min_dist, f"layer_{layer_index}")
+    visualize_model_comparison(all_data, proj_2d, n_pca_components, n_neighbors, min_dist, f"layer_{layer_index}")
 
 
 print("All visualizations completed.")

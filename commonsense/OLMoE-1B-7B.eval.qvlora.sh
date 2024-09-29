@@ -9,13 +9,17 @@
 
 
 declare -a configs=(
-    "qvlora_1.aux"
-    "qvlora_256.aux"
-    "qvlora_512.aux"
+    "gatelora_4.aux"
+    "gatelora_8.aux"
+    "gatelora_16.aux"
+    "gatelora_32.aux"
 )
 '''
 
 declare -a configs=(
+    "qvlora_1.aux"
+    "qvlora_256.aux"
+    "qvlora_512.aux"
     "qvlora_2.aux"
     "qvlora_64.aux"
     "qvlora_128.aux"
@@ -38,10 +42,10 @@ datasets=(
 
 run_evaluation() {
     local model_name=$1
-    #local gpu_id=$2
+    local gpu_id=$2
     
     # Set environment variable for this GPU
-    #export CUDA_VISIBLE_DEVICES=$gpu_id
+    export CUDA_VISIBLE_DEVICES=$gpu_id
     
     for dataset in "${datasets[@]}"; do
         python commonsense_evaluate.qvlora.py \

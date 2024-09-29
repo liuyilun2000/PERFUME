@@ -27,25 +27,25 @@ declare -a configs=(
     "lora_8.${MODEL_TYPE}"
     "lora_16.${MODEL_TYPE}"
     "lora_32.${MODEL_TYPE}"
-)
-declare -a configs=(
     "lora_64.2-1"
     "lora_64.2-2"
     "lora_4.1"
     "lora_2.e"
-)
-declare -a configs=(
     "lora_128.2-2"
     "lora_128.4-4"
     "lora_128.8-8"
     "lora_64.4-1"
-)
-'''
-declare -a configs=(
     "lora_64.e"
     "lora_64.4-4"
     "lora_64.8-8"
     "lora_64.16-8"
+)
+'''
+declare -a configs=(
+    "lora_4.1-1"
+    "lora_8.1-1"
+    "lora_16.1-1"
+    "lora_32.1-1"
 )
 
 # Function to run evaluation

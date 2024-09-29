@@ -217,7 +217,7 @@ def train(
         config = LoraConfig(
             r=lora_r,
             lora_alpha=lora_alpha,
-            target_modules=["q_proj", "v_proj"],
+            target_modules=['gate', 'gate_proj', 'up_proj', 'down_proj'],#['gate'],#["q_proj", "v_proj"],
             lora_dropout=dropout,
             bias="none",
             task_type="CAUSAL_LM",
