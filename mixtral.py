@@ -43,12 +43,12 @@ def print_trainable_parameters(model):
         if param.requires_grad:
             trainable_params += param.numel()
     print(
-        f"Print trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param:.2f}"
+        f"Print trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param:.2f} || {all_param-trainable_params}"
     )
 
 
 
-trainable_param_names = ['experts']
+trainable_param_names = ['shared_routing_adapter_gate']
 convert_trainable_parameters(model, trainable_param_names)
 
 print_trainable_parameters(model)

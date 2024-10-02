@@ -239,12 +239,12 @@ marker_styles = {
 }
 # Define size scale for different vector types
 size_scale = {
-    'FFN Routing Gate': 50,
+    'FFN Routing Gate': 64,
     'FFN Expert': 10,
-    'Shared PEFT': 24,
-    'Shared Routing Gate': 50,
-    'Shared Routing PEFT': 24,
-    'Embedded PEFT': 24
+    'Shared PEFT': 32,
+    'Shared Routing Gate': 64,
+    'Shared Routing PEFT': 32,
+    'Embedded PEFT': 32
 }
 
 alpha = {
@@ -306,7 +306,7 @@ def plot_config(ax, proj, df, title, is_first_subplot=False):
                 marker=marker_styles[vec_type],
                 s=size_scale[vec_type]
         )
-    ax.set_title(title, fontsize=16, fontweight='bold')
+    ax.set_title(title, fontsize=12, fontweight='bold')
     ax.grid(which='both', linestyle=':', linewidth='0.5', color='gray', alpha=0.8)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
@@ -325,26 +325,24 @@ plt.rcParams['font.family'] = 'QTOptimum'
 # Define the configurations
 base_model_name = "allenai/OLMoE-1B-7B-0924"
 
+
+
+
 '''
 
 domain = "commonsense"
-config_names = ["lora_32.e", "lora_32.64-8", "lora_32.8-2", "lora_32.4-4", 
-"lora_32.4-2", "lora_32.2-2", "lora_32.4", "lora_32.2", "lora_32.1"]
-titles = ['Base Model', 'E (Top8/64)', 'R (Top8/64)', 'R (Top2/8)', 'R (Top4/4)', 
-'R (Top2/4)', 'R (Top2/2)', 'D (4)', 'D (2)', 'S (1)']
+config_names = ["lora_32.1", "lora_32.2", "lora_32.4", "lora_32.2-2", "lora_32.4-2", "lora_32.4-4", "lora_32.8-2", "lora_32.64-8", "lora_32.e"]
+titles = ['Base Model', 'S (1)', 'D (2)', 'D (4)', 'R (Top2/2)', 'R (Top2/4)', 'R (Top4/4)', 'R (Top2/8)', 'R (Top8/64)', 'E (Top8/64)']
 yfigs, xfigs = 2, 5
 
 '''
 domain = "math"
-config_names = ["lora_32.e", "lora_32.8-8", "lora_32.8-2", "lora_32.4-4", 
-"lora_32.4-2", "lora_32.2-2", "lora_32.4", "lora_32.2", "lora_32.1"]
-titles = ['Base Model', 'E (Top8/64)', 'R (Top8/8)', 'R (Top2/8)', 'R (Top4/4)', 
-'R (Top2/4)', 'R (Top2/2)', 'D (4)', 'D (2)', 'S (1)']
+config_names = ["lora_32.1", "lora_32.2", "lora_32.4", "lora_32.2-2", "lora_32.4-2", "lora_32.4-4", "lora_32.8-2", "lora_32.8-8", "lora_32.e"]
+titles = ['Base Model', 'S (1)', 'D (2)', 'D (4)', 'R (Top2/2)', 'R (Top2/4)', 'R (Top4/4)', 'R (Top2/8)', 'R (Top8/8)', 'E (Top8/64)']
 yfigs, xfigs = 2, 5
 
-
 figsize = (xfigs*2, yfigs*2)
-for layer_index in range(16):
+for layer_index in [12,13,14,15]:#tqdm(range(16)):
     # Load the base model for the first subfigure
     base_model = AutoModelForCausalLM.from_pretrained(base_model_name, trust_remote_code=True)
     base_layer = base_model.model.layers[layer_index]

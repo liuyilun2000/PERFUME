@@ -2,7 +2,7 @@
 #SBATCH --partition=accelerated
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
-#SBATCH --time=2:59:00
+#SBATCH --time=1:59:00
 #SBATCH --mail-type=ALL
 
 
@@ -39,25 +39,13 @@ declare -a configs=(
     "lora_64.4-4"
     "lora_64.8-8"
     "lora_64.16-8"
+)
+'''
+declare -a configs=(
     "lora_4.1-1"
     "lora_8.1-1"
     "lora_16.1-1"
     "lora_32.1-1"
-    "parallel_4.1-1"
-    "parallel_8.1-1"
-    "parallel_16.1-1"
-    "parallel_32.1-1"
-    "parallel_4.2-2"
-    "parallel_8.2-2"
-    "parallel_16.2-2"
-    "parallel_32.2-2"
-)
-'''
-declare -a configs=(
-    "parallel_4.4-2"
-    "parallel_8.4-2"
-    "parallel_16.4-2"
-    "parallel_32.4-2"
 )
 
 # Function to run evaluation
