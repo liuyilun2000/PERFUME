@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModel
 
 
 #TRANSFORMERS_CACHE_DIR = "/home/hk-project-p0022189/hgf_mxv5488/.cache/huggingface/transformers"
-HF_TOKEN = "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"
+HF_TOKEN = "*"
 MODEL_NAME = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 MODEL_NAME = "mistralai/Mixtral-8x7B-v0.1"
 
