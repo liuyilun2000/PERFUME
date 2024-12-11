@@ -212,6 +212,7 @@ def train(
 
     print(model)
     
+    '''
     adapter_args = get_adapter_args(adapter_type, lora_r, lora_alpha, hidden_dim, dropout)
     if adapter_type == "LoRA":
         config = LoraConfig(
@@ -224,7 +225,8 @@ def train(
         )
     
     model = get_peft_model(model, config)
-    print(model)
+    print(model)    
+    '''
 
 
     if data_path.endswith(".json"):  # todo: support jsonl
@@ -234,6 +236,12 @@ def train(
     
     if resume_from_checkpoint:
         print(f"##### Loading checkpoint from {resume_from_checkpoint} #####")
+        print(model)
+        model = PeftModel.from_pretrained(model, resume_from_checkpoint, is_trainable=True)
+        print(model)
+        print(f"##### Successfully loaded trainable parameters from {resume_from_checkpoint} #####")
+        print_trainable_parameters(model)
+    '''
         # Check the available weights and load them
         checkpoint_name = os.path.join(
             resume_from_checkpoint, "model.safetensors"
@@ -258,6 +266,7 @@ def train(
     #else:
     #    print("##### Initializing parameters #####")
     #    init_trainable_parameters(model)
+    '''
     
     #trainable_param_names = ['lora_A', 'lora_B', 'adapter_w1', 'adapter_w2', 'shared_routing_adapter_gate']
     #convert_trainable_parameters(model, trainable_param_names)

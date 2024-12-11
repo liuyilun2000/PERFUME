@@ -51,13 +51,14 @@ declare -a configs=(
     "parallel_8.2-2"
     "parallel_16.2-2"
     "parallel_32.2-2"
-)
-'''
-declare -a configs=(
     "parallel_4.4-2"
     "parallel_8.4-2"
     "parallel_16.4-2"
     "parallel_32.4-2"
+)
+'''
+declare -a configs=(
+    "parallel_4.4-2"
 )
 
 # Function to run evaluation
